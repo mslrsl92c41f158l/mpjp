@@ -2,7 +2,7 @@ package s031;
 
 public class Primitive {
     public static void main(String[] args) {
-        boolean flag = false;
+    boolean flag = false;
         System.out.println(flag);
 
         char c = 'A';
