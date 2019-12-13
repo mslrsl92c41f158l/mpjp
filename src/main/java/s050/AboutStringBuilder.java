@@ -6,7 +6,7 @@ public class AboutStringBuilder {
         StringBuilder sb2 = new StringBuilder(20);
         StringBuilder sb3 = new StringBuilder("hello");
         
-        System.out.println("capacity 1: " + sb.capacity());
+        System.out.println("capacity 1: " + sb.capacity());// capacity è quanto spazioe ho allocato sulla stringa
         System.out.println("capacity 2: " + sb2.capacity());
         System.out.println("capacity 3: " + sb3.capacity());
         
