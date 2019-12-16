@@ -16,10 +16,18 @@ class S57Test {
     }
 
     @Test
+    void speedPlain2() {
+        double actual = S57.speed(100, 2);
+
+        assertEquals(actual, 10.438, 0.001);
+    }
+
+    @Test
     void speedInfinity() {
         double actual = S57.speed(100, 0);
 
-        assertThat(actual, is(Double.POSITIVE_INFINITY));
+        assertThat(actual, is(Double.POSITIVE_INFINITY));// è una classe perchè l'iniziale maiuscola
+        
     }
 
     @Test
