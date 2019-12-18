@@ -5,9 +5,9 @@ public class Main {
         Barker[] barkers = new Barker[2];
         
         barkers[0] = new Fox();
-        barkers[1] = new Dog();
+        barkers[1] = new Dog();      // il Dog è sullo heap e il suo reference
 
-        for(Barker barker: barkers) {
+        for(Barker barker: barkers) {              // chiamo il metodo bark che nn è definito  ma è specifico per la classe Dog.
             System.out.println(barker.bark());
         }
         

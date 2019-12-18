@@ -1,7 +1,7 @@
 package s062;
 
 public class Scope {
-    private static int staticMember = 5;
+    private static int staticMember = 5; // essendo privato non lo potrei vedere se osse fuori dalla classe. 
     private long member = 5;
 
     public void f() {

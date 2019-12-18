@@ -71,12 +71,11 @@ public class S58 {
 	 * @return a letter in [A, F]
 	 */
 	public static char vote(double percentile) {
-		int score = 0;	
-		 switch (score) {
-	//	 case > 90:
-	//		 return "A";
+		int value = 0;	
+		  if ( value > 90 ) {
+			//  return "A";
+		  }
 		 
-		 }
 		
 		return 'F';
 	}
