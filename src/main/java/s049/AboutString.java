@@ -21,9 +21,9 @@ public class AboutString {
         System.out.println("t.substring(3): " + t.substring(3)); // è come se generasse una nuova stringa che parte dagli elem indicati; in qst caso da 3 fino alla fine della parola
 
         System.out.println("u equals u2? " + u.equals(u2));// qui si va a vedere il contenuto.
-        System.out.println("u == u2? " + (u == u2));// non è la stessa cosa perchè essendo 2 stringhe sto andando a confrontare due references di due oggetti diversi, perciò non saranno uguali
+        System.out.println("u == u2? " + (u == u2));// non è la stessa cosa perchè essendo 2 stringhe sto andando a confrontare due references di due oggetti diversi, perciò non saranno uguali; qui si guarda al reference
 
-        System.out.println("First index of 'l' is s: " + s.indexOf('l'));// sto andando a cercare l'indice di un det. carattere
+        System.out.println("First index of 'l' is s: " + s.indexOf('l'));// sto andando a cercare l'indice di un det. carattere e quindi mi dice in che posizione è.
         System.out.println("Last index of 'l' is s: " + s.lastIndexOf('l'));//idem
         System.out.println("there is no 'x' in s: " + s.indexOf('x'));
         System.out.println("in s \"ll\" starts at " + s.indexOf("ll"));
@@ -38,7 +38,7 @@ public class AboutString {
 
         String[] splits = "one for me, one for you".split(" ");//trasforma la stringa in un array di stringhe e passa, quello che gli passo come parametro come divisore. dentro agli apici metti il carattere che vuoi usare come separatore che non viene rappresentato.
         System.out.println("Splitting: ");
-        for (String token : splits) {// token = riga dell'array
+        for (String token : splits) {// token = riga dell'array 
             System.out.println(token);
         }
         String joined = String.join(" ", splits);// è un metodo statico e fa esattamente l'opposto del metodo split. Passo un array di striche definisco un congiuntore

@@ -9,7 +9,7 @@ where region_id = 1;
 select * from regions;
 
 -- select distinct
-select distinct manager_id
+select distinct MANAGER_ID
 from employees;
 
 -- select with change on results
@@ -25,5 +25,5 @@ select current_date from dual;
 select 1+2, 3-4, 2*6, 5/2, current_date;
 
 -- concatenation
-select concat(country_id, "...", region_id, '!' )
+select concat(country_id, "...", region_id, '!' )as X
 from countries;

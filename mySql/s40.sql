@@ -4,7 +4,7 @@ from employees
 where department_id = 50;
 
 -- count, count distinct
-select count(manager_id), count(distinct manager_id)
+select count(*), count(manager_id), count(distinct manager_id)
 from employees;
 
 -- max, min
